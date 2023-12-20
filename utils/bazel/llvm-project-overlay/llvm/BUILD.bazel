@@ -4935,6 +4935,7 @@ py_binary(
     name = "lit",
     testonly = True,
     srcs = ["utils/lit/lit.py"] + glob(["utils/lit/lit/**/*.py"]),
+    imports = ["utils/lit"],
 )
 
 cc_library(
